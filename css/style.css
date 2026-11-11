@@ -399,7 +399,7 @@ section { position: relative; padding: 120px 24px; overflow: hidden; }
 .hero__backdrop { position: absolute; inset: 0; z-index: 0; }
 .hero__bg-img {
   position: absolute; inset: 0;
-  background-image: url('../assets/images/hero-bg.jpg');
+  background-image: url('../assets/images/image.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
