@@ -1,0 +1,59 @@
+/* ==========================================================================
+   RESPONSIVE.CSS — all breakpoints
+   ========================================================================== */
+
+/* ===== TABLET: 900px ===== */
+@media (max-width: 900px) {
+  section { padding: 90px 20px; }
+
+  .rsvp-grid { grid-template-columns: 1fr; }
+
+  .calendar-detail { max-width: 320px; }
+}
+
+/* ===== MOBILE: 640px ===== */
+@media (max-width: 640px) {
+  section { padding: 72px 18px; }
+
+  .hero { padding: 120px 18px 90px; }
+
+  /* Stack name blocks vertically on small screens */
+  .hero__names {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .hero__name-block {
+    padding: 14px 22px 16px;
+    width: min(85vw, 320px);
+  }
+  .hero__name {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    white-space: normal;
+    text-align: center;
+  }
+  .hero__amp {
+    font-size: clamp(2.6rem, 10vw, 3.5rem);
+  }
+
+  .invitation-lede { margin-bottom: 0; }
+
+  .countdown-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .countdown-box { padding: 20px 8px; }
+
+  .calendar-card { padding: 36px 22px; }
+  .calendar-detail { flex-direction: row; text-align: left; max-width: 100%; }
+
+  .music-toggle { bottom: 20px; right: 20px; width: 48px; height: 48px; font-size: 0.95rem; }
+
+  .footer-maps-btn { width: 100%; justify-content: center; }
+
+}
+
+/* ===== SMALL MOBILE: 380px ===== */
+@media (max-width: 380px) {
+  .countdown-grid { grid-template-columns: repeat(2, 1fr); }
+  .countdown-number { font-size: 1.6rem; }
+  .hero__date { flex-wrap: wrap; }
+  .hero__name { font-size: clamp(1.2rem, 7vw, 1.6rem); }
+}
